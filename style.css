@@ -1,13 +1,13 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-}
- .header-part{
+    /* font-weight: 700; */
+ }
+ /* .header-part{
     color: #3A3A3A;
     margin-left: 100px;
     margin-top: 87px;
-}
-.first-text{
+ } */
+ .first-text{
     font-size: 52px;
     width: 600px;
     height: 133px;
@@ -15,21 +15,20 @@ body{
     margin-left: 100px;
     color: #3A3A3A;
     font-weight: bold;   
-}
-h2{
+ }
+ h2{
     margin-left: 100px;
     margin-top: 100px;
     color: #3A3A3A;
-}
-article p{
+ }
+ .fast-p{
     width: 505px;
     height: 60px;
     margin-top: 5px;
     margin-left: 100px;
-    color: #3A3A3A;
-    
-}
-.button{
+    color: #3A3A3A;  
+ }
+ .button{
     width: 196px;
     height: 44px;
     margin-left: 100px;
@@ -40,80 +39,80 @@ article p{
     border-color:#E02C6D;
     font-size:16px ;
     font-weight: bold;   
-}
-.button i{
+ }
+ .button i{
      margin-left: 10px;    
-}
-.first-section{
+ }
+ .first-section{
     display: flex;
-}
-.camera{
+ }
+ .camera{
     width: 400px;
     height: 414px;
     margin-left: 110px;
-}
-
-/* -----------Popular collections
+ }
+ 
+ /* -----------Popular collections
              ------------------- */
-h3{
+ .popular-head h3{
     text-align: center;
     font-size: 30px;
-    margin-top: 120px;
-}
-h4{
+    padding-top: 50px;
+ }
+ h4{
     font-size: 20px;
-}
-.group{
+ }
+ .group{
     width: 75px;
     height: 24px;
     margin-left: 240px;
     margin-top: 60px;
     color: #E02C6D;
     font-size: 16px;
-}
-
-.fa-star{
+ }
+ 
+ .fa-star{
     color: darkorange;
     font-size: 16px;
-}
-.thumbnail-tatile{
+ }
+ .thumbnail-tatile{
     font-size: 14px;
     width: 200px;
     height: 62px;
     color:#787885;
    
-}
-.thumbnail-1{
+ }
+ .thumbnail-1{
     margin-left: 14px;
     
-}
-.thumbnail-1 img{
+ }
+ .thumbnail-1 img{
  width: 300px;
  height: 250px;
  margin-top: 20px;
  border-radius: 6px;   
-}
-.collections{
+ }
+ .collections{
     width: 330px;
    height: 490px;
    background: #FFFFFF;
    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
    border-radius: 5px;
-   margin-left: 100px;
-}
-
-.second-section{
+   margin-left: 30px;
+ }
+ 
+ .second-section{
        display: grid;
        grid-template-columns: repeat(3,1fr);
        grid-row-gap: 25px;
-
        width: 1000px;
        height: 800px;
+       padding-left: 70px;
        left: 196px;   
-}
-
-/**************************************************** Extra part **********************************************/
-.extra-part{
+ }
+ 
+ /**************************************************** Extra part **********************************************/
+ .extra-part{
     margin-top: 165px;
     margin-bottom: 58px;
     margin-left: 90px;
@@ -123,8 +122,7 @@ h4{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 80px;
-    width: 100px;
-    
+    width: 100px;  
  }
  .one{
     width: 330px;
@@ -140,8 +138,8 @@ h4{
  }
  .write{
     color: #6C6C6C;
-}
-.watch-live{
+ }
+ .watch-live{
     padding: 10px 24px;
     background-color: #E02C6D;
     font-weight: 500;
@@ -156,69 +154,101 @@ h4{
     margin-top: 170px;
     border-radius: 10px;
  }
-
-
+ 
+ 
          /*
       footer styles
          */
-.footer-style{
+ .footer-style{
    
     padding-top: 50px;
-}
-footer{
+ }
+ footer{
     background-color:rgb(19, 6, 39);
     margin-top: 500px;
-    width: 1340px;
+    width: 100%;
     height: 200px;
     color: #FFFF;
     text-align: center;
-}
-footer p{
+ }
+ footer p{
     width: 200px;
     height: 30px;
     font-size: 13px;
     font-weight: normal;
     margin-left: 565px;
-}
-footer a{
+ }
+ footer a{
     font-size: 25px;
-}
-.hadding{
+ }
+ .hadding{
     font-size: 24px;
-}
-.instagram{
+ }
+ .instagram{
     color: white;
     
-}
-.twitter{
+ }
+ .twitter{
     color: white;
     padding-left: 18px;
-}
-.facebook{
+ }
+ .facebook{
     color:white;
     padding-left: 18px;
-}
-.youtube{
+ }
+ .youtube{
     color: white;
     padding-left: 18px;
-}
-
-/* Media queary styles */
-
-/* Mobile Device */
-@media only screen and (max-width:668px) {
+ }
+ 
+ /* Media queary styles */
+ 
+ /* Mobile Device */
+ @media only screen and (max-width:668px) {
     .first-section{
-        width: 100%;
+       display: block;
+    }
+    .first-section img{
+       width: 80%;
+    }
+    .first-text{
+       font-size: 25px;
+       width: 100%;
+       height: 100%;
+       color: #3A3A3A;
+       font-weight: bold;   
+    }
+    .fast-p{
+       width: 100%;
+       padding-bottom: 20px;
+       color: #3A3A3A;  
+    }
+    .popular-head h3{
+       text-align: center;
+       font-size: 20px;
+       padding-top: 25px;
+    }
+    .so-tired{
+       display: none;
+    }
+    footer{
+       background-color:rgb(19, 6, 39);
+       background-position: cover;
+       margin-top: 2300px;
+       width: 100%;
+       height: 200px;
+       color: #FFFF;
+       text-align: center;
     }
     .collection, .one, .footer-style{
         grid-template-columns: repeat(1,1fr);
     }
-    .first-section, .second-section{
-        flex-direction: column;
-    }
     .second-section{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    } 
-}
-
+        grid-template-columns: repeat(1, 1fr);     
+       padding-left: 10px;
+    }
+    .group{
+        display: none;
+     } 
+ }
